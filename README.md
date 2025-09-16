@@ -4,9 +4,9 @@
 
 **Mestre em Engenharia Biomédica | Professora e Pesquisadora**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andressa-laysa-queiroz-ribeiro-573931217/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:andressa.laysa@ufpe.br)
-[![Lattes](https://img.shields.io/badge/Lattes-006EB5?style=for-the-badge&logo=google-scholar&logoColor=white)](http://lattes.cnpq.br/)
+[![Lattes](https://img.shields.io/badge/Lattes-006EB5?style=for-the-badge&logo=google-scholar&logoColor=white)](http://lattes.cnpq.br/3695824074873024)
 
 </div>
 
