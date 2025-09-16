@@ -71,17 +71,6 @@ Coordenação de oficinas de dança e tecnologia, impacto social e cultural.
 
 ---
 
-## 📊 Estatísticas
-
-<div align="center">
-  
-![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=SEU-USUARIO&show_icons=true&theme=radical&hide_border=true)
-![Linguagens mais usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=SEU-USUARIO&layout=compact&theme=radical&hide_border=true)
-
-</div>
-
----
-
 ## 📫 Contato
 
 - **Telefone:** (81) 99819-7366
