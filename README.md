@@ -66,7 +66,7 @@ Desenvolvimento de projetos de inovação em saúde, tecnologia e educação.
 Apoio institucional e estratégico em políticas educacionais e juventude.
 
 ### 🎨 Arte-Educadora e Educadora Social
-**Prefeitura do Recife** (2022-atual)  
+**Prefeitura do Recife** (2022) 
 Coordenação de oficinas de dança e tecnologia, impacto social e cultural.
 
 ---
