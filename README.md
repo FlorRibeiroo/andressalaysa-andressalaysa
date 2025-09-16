@@ -14,7 +14,7 @@
 
 ## 👋 Sobre Mim
 
-Multidisciplinar por natureza, uni **tecnologia, saúde e arte** para criar soluções que transformam vidas e comunidades. Com experiência em docência, pesquisa e gestão de projetos.
+Multidisciplinar por natureza, une **tecnologia, saúde e arte** para criar soluções que transformam vidas e comunidades. Com experiência em docência, pesquisa e gestão de projetos.
 
 > "Ciência, arte e política são meus instrumentos de mudança. Vamos juntos transformar realidades?"
 
