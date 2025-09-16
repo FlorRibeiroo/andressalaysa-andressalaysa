@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andressa Laysa | Front-End & Pesquisadora</title>
+    <title>GitHub - Andressa Laysa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -27,69 +27,163 @@
             background-color: var(--light);
             color: var(--text);
             line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
+            padding: 20px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 0 20px;
         }
         
-        /* Header & Navigation */
-        header {
+        .github-profile {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .profile-header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
             color: white;
-            padding: 2rem 0;
+            padding: 30px;
             position: relative;
-            overflow: hidden;
         }
         
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        .profile-content {
+            padding: 30px;
         }
         
         .profile-info {
-            flex: 1;
-            min-width: 300px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
         
-        .profile-image {
-            width: 180px;
-            height: 180px;
+        .avatar {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            background-color: #ccc;
+            border: 4px solid white;
+            background: #ddd;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 2rem;
-            overflow: hidden;
+            margin-right: 25px;
         }
         
-        .profile-image i {
-            font-size: 5rem;
+        .avatar i {
+            font-size: 50px;
             color: rgba(255, 255, 255, 0.7);
         }
         
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
+        .user-details h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
         }
         
-        .tagline {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.9);
+        .user-details p {
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .skill {
+            background: var(--light);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: var(--dark);
+            border: 1px solid #ddd;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .project {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-header {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+            color: white;
+            padding: 15px;
+        }
+        
+        .project-body {
+            padding: 15px;
+        }
+        
+        .project-footer {
+            padding: 15px;
+            background: var(--light);
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
         }
         
         .social-links {
             display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
+            gap: 15px;
+            margin-top: 20px;
         }
         
         .social-links a {
@@ -99,7 +193,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
+            background: var(--primary);
             color: white;
             text-decoration: none;
             transition: var(--transition);
@@ -110,487 +204,208 @@
             transform: translateY(-3px);
         }
         
-        /* About Section */
-        .about {
-            padding: 5rem 0;
-            background: white;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: var(--primary);
-            position: relative;
-        }
-        
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: var(--secondary);
-            margin: 0.5rem auto;
-            border-radius: 2px;
-        }
-        
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .about-card {
-            background: var(--light);
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: var(--transition);
-        }
-        
-        .about-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .about-card i {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-        
-        .about-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-        
-        /* Skills Section */
-        .skills {
-            padding: 5rem 0;
-            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-        }
-        
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .skill-category {
-            background: white;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .skill-category h3 {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .skill-items {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
-        
-        .skill-item {
-            background: var(--light);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            color: var(--dark);
-            border: 1px solid #ddd;
-            transition: var(--transition);
-        }
-        
-        .skill-item:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateY(-2px);
-        }
-        
-        /* Projects Section */
-        .projects {
-            padding: 5rem 0;
-            background: white;
-        }
-        
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .project-card {
-            background: var(--light);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: var(--transition);
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .project-image {
-            height: 200px;
-            background: linear-gradient(45deg, var(--primary), var(--accent));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-        }
-        
-        .project-content {
-            padding: 1.5rem;
-        }
-        
-        .project-content h3 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-        
-        .project-content p {
+        .quote {
+            font-style: italic;
             color: #666;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            margin: 20px 0;
         }
         
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .project-tag {
-            background: rgba(45, 91, 122, 0.1);
-            color: var(--primary);
-            padding: 0.3rem 0.7rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-        }
-        
-        .project-link {
-            display: inline-block;
-            color: var(--secondary);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: var(--transition);
-        }
-        
-        .project-link:hover {
-            color: var(--primary);
-        }
-        
-        /* Contact Section */
-        .contact {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
-            color: white;
-        }
-        
-        .contact .section-title {
-            color: white;
-        }
-        
-        .contact-content {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .contact-content p {
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-        
-        .contact-btn {
-            display: inline-block;
-            background: var(--secondary);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            font-size: 1.1rem;
-        }
-        
-        .contact-btn:hover {
-            background: white;
-            color: var(--secondary);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Footer */
-        footer {
-            background: var(--dark);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .footer-links {
-            display: flex;
-            gap: 2rem;
-            margin: 1.5rem 0;
-        }
-        
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        
-        .footer-links a:hover {
-            color: var(--secondary);
-        }
-        
-        .copyright {
-            margin-top: 1rem;
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Design */
         @media (max-width: 768px) {
-            .header-content {
+            .profile-info {
                 flex-direction: column;
                 text-align: center;
             }
             
-            .profile-image {
-                margin: 0 auto 1.5rem;
+            .avatar {
+                margin: 0 auto 20px;
             }
             
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            .tagline {
-                font-size: 1.2rem;
-            }
-            
-            .social-links {
+            .stats {
+                flex-wrap: wrap;
                 justify-content: center;
+            }
+            
+            .projects {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="profile-image">
+    <div class="github-profile">
+        <div class="profile-header">
+            <div class="profile-info">
+                <div class="avatar">
                     <i class="fas fa-user"></i>
                 </div>
-                <div class="profile-info">
+                <div class="user-details">
                     <h1>Andressa Laysa</h1>
-                    <p class="tagline">Front-End Developer & Pesquisadora em Saúde e Tecnologia</p>
-                    <p>Unindo ciência, arte e tecnologia para transformar vidas e comunidades</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    <p>Desenvolvedora Front-End & Pesquisadora em Saúde e Tecnologia</p>
+                    <div>
+                        <span class="badge">Mestra em Eng. Biomédica</span>
+                        <span class="badge">Professora</span>
+                        <span class="badge">Pesquisadora</span>
+                        <span class="badge">Arte-Educadora</span>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Formação</h3>
-                    <p>Mestra em Engenharia Biomédica - UFPE</p>
-                    <p>Bacharel em Enfermagem - UPE</p>
-                    <p>Licencianda em Dança - UFPE</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Atuação</h3>
-                    <p>Professora de Front-End - Bolsa Futuro Digital</p>
-                    <p>Pesquisadora - ICEIS-INCT e CEMJ Brasil</p>
-                    <p>Arte-Educadora - Prefeitura do Recife</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Propósito</h3>
-                    <p>Desenvolver soluções tecnológicas que integram saúde, educação e arte para impactar positivamente a sociedade.</p>
+        
+        <div class="profile-content">
+            <div class="section">
+                <h2 class="section-title">Sobre</h2>
+                <p>Multidisciplinar por natureza, uni <strong>tecnologia, saúde e arte</strong> para criar soluções que transformam vidas e comunidades. Com mais de 10 anos de experiência em docência, pesquisa e gestão de projetos.</p>
+                
+                <div class="quote">
+                    "Ciência, arte e política são meus instrumentos de mudança. Vamos juntos transformar realidades?"
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <div class="container">
-            <h2 class="section-title">Habilidades</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Front-End</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">HTML5</span>
-                        <span class="skill-item">CSS3</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Next.js</span>
-                        <span class="skill-item">Responsive Design</span>
-                    </div>
+            
+            <div class="section">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="skills">
+                    <span class="skill">HTML5</span>
+                    <span class="skill">CSS3</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Next.js</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">Jest</span>
+                    <span class="skill">Cypress</span>
+                    <span class="skill">APIs REST</span>
+                    <span class="skill">GraphQL</span>
+                    <span class="skill">UI/UX</span>
+                    <span class="skill">Responsive Design</span>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Ferramentas</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">GitHub</span>
-                        <span class="skill-item">Jest</span>
-                        <span class="skill-item">Cypress</span>
-                        <span class="skill-item">Figma</span>
-                        <span class="skill-item">VS Code</span>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Estatísticas</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Anos de Experiência</div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-flask"></i> Pesquisa</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Metodologia Científica</span>
-                        <span class="skill-item">ABNT/APA</span>
-                        <span class="skill-item">Análise de Dados</span>
-                        <span class="skill-item">Escrita Acadêmica</span>
-                        <span class="skill-item">Gestão de Projetos</span>
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Estudantes Ensinados</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projetos Concluídos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Áreas de Atuação</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h2 class="section-title">Projetos em Destaque</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Plataforma de Ensino Front-End</h3>
-                        <p>Desenvolvimento de plataforma educacional para o programa Bolsa Futuro Digital.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Next.js</span>
-                            <span class="project-tag">CSS3</span>
+            
+            <div class="section">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <div class="projects">
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>Plataforma de Ensino Front-End</h3>
                         </div>
-                        <a href="#" class="project-link">Ver Projeto <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Sistema de Saúde Integrado</h3>
-                        <p>Interface para sistema de monitoramento de dados em saúde para o ICEIS-INCT.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">APIs</span>
-                            <span class="project-tag">UX/UI</span>
+                        <div class="project-body">
+                            <p>Desenvolvimento de plataforma educacional para o programa Bolsa Futuro Digital.</p>
                         </div>
-                        <a href="#" class="project-link">Ver Projeto <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-dragon"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>App Dançaterapia</h3>
-                        <p>Aplicativo para acompanhamento de sessões de dançaterapia para terceira idade.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React Native</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
+                        <div class="project-footer">
+                            <span>React, Next.js, CSS</span>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
-                        <a href="#" class="project-link">Ver Projeto <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>Sistema de Saúde Integrado</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>Interface para sistema de monitoramento de dados em saúde para o ICEIS-INCT.</p>
+                        </div>
+                        <div class="project-footer">
+                            <span>JavaScript, APIs, UX/UI</span>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-header">
+                            <h3>App Dançaterapia</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>Aplicativo para acompanhamento de sessões de dançaterapia para terceira idade.</p>
+                        </div>
+                        <div class="project-footer">
+                            <span>React Native, Node.js</span>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h2 class="section-title">Vamos Conversar?</h2>
-            <div class="contact-content">
-                <p>Estou disponível para palestras, cursos, consultorias e liderança de projetos que potencializem transformação social, inovação e resultados.</p>
-                <a href="mailto:andressa.laysa@ufpe.br" class="contact-btn">Entrar em Contato</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <h3>Andressa Laysa</h3>
-                <div class="footer-links">
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Lattes</a>
-                    <a href="#">GitHub</a>
-                    <a href="#">Instagram</a>
+            
+            <div class="section">
+                <h2 class="section-title">Contato</h2>
+                <p>Disponível para palestras, cursos, consultorias e liderança de projetos que potencializem transformação social e inovação.</p>
+                
+                <div class="social-links">
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="E-mail"><i class="far fa-envelope"></i></a>
+                    <a href="#" title="Lattes"><i class="ai ai-lattes">L</i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
-                <p class="copyright">© 2023 Andressa Laysa. Todos os direitos reservados.</p>
             </div>
         </div>
-    </footer>
+    </div>
 
     <script>
-        // Simple animation for skills on scroll
+        // Animação simples para os elementos
         document.addEventListener('DOMContentLoaded', function() {
-            const skillItems = document.querySelectorAll('.skill-item');
-            
-            skillItems.forEach((item, index) => {
-                // Add delay for staggered animation
-                item.style.animationDelay = `${index * 0.1}s`;
-            });
-            
-            // Add hover effect to project cards
-            const projectCards = document.querySelectorAll('.project-card');
-            projectCards.forEach(card => {
-                card.addEventListener('mouseenter', () => {
-                    card.querySelector('.project-link').style.color = '#E76F51';
-                });
+            // Animação para os cards de projetos
+            const projects = document.querySelectorAll('.project');
+            projects.forEach((project, index) => {
+                project.style.opacity = '0';
+                project.style.transform = 'translateY(20px)';
+                project.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                 
-                card.addEventListener('mouseleave', () => {
-                    card.querySelector('.project-link').style.color = '#2D5B7A';
-                });
+                setTimeout(() => {
+                    project.style.opacity = '1';
+                    project.style.transform = 'translateY(0)';
+                }, 200 + (index * 100));
             });
+            
+            // Animação para as habilidades
+            const skills = document.querySelectorAll('.skill');
+            skills.forEach((skill, index) => {
+                skill.style.opacity = '0';
+                skill.style.transform = 'scale(0.8)';
+                skill.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                
+                setTimeout(() => {
+                    skill.style.opacity = '1';
+                    skill.style.transform = 'scale(1)';
+                }, 500 + (index * 50));
+            });
+            
+            // Efeito de digitação para a citação
+            const quote = document.querySelector('.quote');
+            const originalText = quote.textContent;
+            quote.textContent = '';
+            
+            let i = 0;
+            function typeWriter() {
+                if (i < originalText.length) {
+                    quote.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 30);
+                }
+            }
+            
+            setTimeout(typeWriter, 1000);
         });
     </script>
 </body>
